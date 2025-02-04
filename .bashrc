@@ -83,7 +83,7 @@ if ! shopt -oq posix; then
 fi
 
 #GitHub bash prompt
-source /home/leanke/config/git-prompt.sh
+source /home/leanke/loft/config/git-prompt.sh
 
 #Added by Leanke
 export EDITOR=micro
