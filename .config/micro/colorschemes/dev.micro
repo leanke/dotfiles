@@ -1,0 +1,110 @@
+########
+# Test #
+######## 
+#color-link func "#fff09a,#242424" #                      # #fff09a, #242424    
+#struct name "#008080,#242424" #                          # #008080, #242424     
+#variable "#89cff0,#242424" #                             # #89cff0, #242424     
+#function name "#fff09a,#242424" #                        # #fff09a, #242424     
+#color-link special "#268BD2,#002833" #                   # #268BD2, #002833  
+#color-link identifier "#c599ff,#002833" #                 # #c599ff, #002833     
+#color-link identifier.pointer "#fff09a,#002833" #         # #fff09a, #002833 
+#color-link identifier.argument "#D70000,#002833" #      # #D70000, #002833 
+#color-link identifier.parameter "#6eeeff,#002833" #     # #6eeeff, #002833   
+#color-link identifier.typedef "#08b110,#002833" #        # #08b110, #002833  
+#color-link identifier.reference "#6eeeff,#002833" #     # #6eeeff, #002833 
+################################################################################### 
+color-link underlined "#D70000,#D70000" #                 # #D70000, #fff09a     
+color-link error "#D70000,#D70000" #                      # #D70000, #008080     
+color-link todo "#D70000,#D70000" #                       # #D70000, #89cff0     
+color-link hlsearch "#D70000,#D70000" #                   # #D70000, #B58900     
+color-link statusline "#D70000,#D70000" #                 # #D70000, #268BD2     
+color-link tabbar "#D70000,#D70000" #                     # #D70000, #839496     
+color-link indent-char "#D70000,#D70000" #                # #D70000, #c599ff   
+color-link cursor-line "#D70000" #                        # #D70000     
+color-link color-column "#D70000" #                       # #D70000     
+color-link type.extended "#D70000,#D70000" #              # #D70000, #08b110     
+color-link match-brace "#D70000" #                        # #D70000, #fdee00     
+color-link tab-error "#D70000" #                          # #D70000     
+color-link trailingws "#D70000" #                         # #D70000     
+color-link symbol.tag "#D70000,#D70000" #                 # #D70000, #D33682
+
+#####
+# C #
+#####
+color-link identifier.c.function "#fdee00,#002833" #                      # #fdee00, #002833  
+color-link identifier.c.pointer "#08b110,#002833" #                       # #08b110, #002833 
+color-link identifier.c.struct "#08b110,#002833" #                        # #08b110, #002833 
+color-link identifier.c.pointer_d "#6eeeff,#002833" #                     # #6eeeff, #002833  
+color-link identifier.c.reference "#00c1ff,#002833" #                     # #00c1ff, #002833
+#######################################################
+#color-link identifier.c "#D70000,#002833" #                             # #D70000, #002833 off
+#color-link identifier.c.parameter "#00c1ff,#002833" #                   # #00c1ff, #002833 off
+#color-link identifier.c.function "#fdee00,#002833" #                    # #fdee00, #002833
+#color-link identifier.c.function.argument "#dadada,#002833" #             # #dadada, #002833
+#color-link identifier.c.function.var "#00a1ff,#002833" #                # #00a1ff, #002833
+#color-link identifier.c.struct "#009b0d,#002833" #                      # #009b0d, #002833
+#color-link identifier.c.struct.pointer "#009b0d,#002833" #              # #009b0d, #002833
+#color-link identifier.c.struct.reference "#00c1ff,#002833" #            # #00c1ff, #002833
+#color-link identifier.c.enum "#009b0d,#002833" #                        # #009b0d, #002833
+
+##########
+# Python #
+########## 
+color-link identifier.python.class "#009b0d,#002833" #                    # #009b0d, #002833
+color-link identifier.python.import "#009b0d,#002833" #                   # #009b0d, #002833
+color-link identifier.python.self "#0081ff,#002833" #                     # #0081ff, #002833
+color-link identifier.python.class.method "#fdee00,#002833" #             # #fdee00, #002833
+color-link identifier.python.class.attribute "#00a1ff,#002833" #          # #00a1ff, #002833
+color-link identifier.python.as "#00a1ff,#002833" #                       # #00a1ff, #002833
+color-link identifier.python.class.attribute2 "#00e1ff,#002833" #         # #00c1ff, #002833
+color-link identifier.python.function "#fdee00,#002833" #                 # #fdee00, #002833
+color-link identifier.python.function.var "#dadada,#002833" #             # #dadada, #002833
+color-link identifier.python.string "#ffc863,#002833" #                   # #ffc863, #002833
+
+#########################
+# Solarized-tc Defaults #
+#########################
+
+color-link underlined "#D70000,#002833" #                 # #D33682, #002833     
+#color-link error "#ffc863,#002833" #                      # #ffc863, #002833     
+color-link todo "#D70000,#002833" #                       # #D33682, #002833 
+    
+color-link statusline "#bee2ff,#001010" #                 # #bee2ff, #001010  
+color-link tabbar "#bee2ff,#001010" #                     # #bee2ff, #001010     
+color-link indent-char "#ff0000,#ff0000" #                # #ff0000, #ff0000   
+
+########
+# Misc #
+######## 
+color-link cursor-line "#00191f" #                        # #00191f     
+color-link color-column "#003541" #                       # #003541     
+color-link type.extended "#839496,#002833" #              # #839496, #002833     
+color-link match-brace "#ff0000,#ff0000" #                # #ff0000, #ff0000      
+color-link symbol.tag "#AE81FF,#002833" #                 # #AE81FF, #002833
+  
+############
+# Globals #
+############ 
+color-link default "#dadada,#002833" #                    # #dadada, #002833
+color-link comment "#6e8b3d,#002833" #                    # #6e8b3d, #002833 
+color-link diff-added "#00AF00" #                         # #00AF00     
+color-link diff-modified "#FFAF00" #                      # #FFAF00     
+color-link diff-deleted "#D70000" #                       # #D70000  
+color-link tab-error "#D75F5F" #                          # #D75F5F     
+color-link trailingws "#D75F5F" #                         # #D75F5F      
+color-link gutter-error "#003541,#ff0000" #               # #003541, #ff0000     
+color-link gutter-warning "#003541,#FFAF00" #             # #003541, #FFAF00 
+color-link hlsearch "#70f8f1,#00473e" #                   # #70f8f1, #00473e        
+color-link current-line-number "#586E75,#002833" #        # #586E75, #002833 
+color-link line-number "#f8f8ff,#002833" #                # #f8f8ff, #002833     
+color-link type "#007ecc,#002833" #                       # #007ecc, #002833     
+color-link preproc "#f1c17f,#002833" #                    # #f1c17f, #002833          
+color-link special "#c599ff,#002833" #                    # #c599ff, #002833     
+color-link statement "#a64ca6,#002833" #                  # #a64ca6, #002833 
+color-link symbol "#96d9e0,#002833" #                     # #96d9e0, #002833  
+color-link symbol.brackets "#f3e033,#002833" #            # #f3e033, #002833 
+color-link constant "#6f8099,#002833" #                   # #6f8099, #002833    
+color-link constant.string  "#f1c17f,#002833" #           # #f1c17f, #002833     
+color-link constant.string.char  "#f1c17f,#002833" #      # #f1c17f, #002833   
+color-link identifier "#dadada,#002833" #                 # #dadada, #002833
+

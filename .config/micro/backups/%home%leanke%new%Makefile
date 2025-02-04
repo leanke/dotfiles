@@ -1,0 +1,21 @@
+
+linux = gcc
+windows = x86_64-w64-mingw32-g++ # gcc
+CFLAGS = -I./src
+# CFLAGS += -I/usr/include/CUnit
+# LDFLAGS = -lncurses
+# LDFLAGS += -lcunit
+LDFLAGS = -Wextra -Wall -Wfloat-equal -Wundef -Wshadow -Wpointer-arith -Wcast-align -Wstrict-prototypes -Wstrict-overflow=5 -Wwrite-strings -Waggregate-return -fsanitize=address
+
+all: main
+
+main: src/game.o
+	$(linux) -o build/game src/game.o $(LDFLAGS)
+	$(windows) -o build/game src/game.o #$(LDFLAGS)
+
+
+src/game.o: src/game.c
+	$(linux) $(CFLAGS) -c src/game.c -o src/game.o
+
+clean:
+	rm -f build/game.* build/game src/*.o

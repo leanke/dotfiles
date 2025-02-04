@@ -1,0 +1,56 @@
+filetype: python
+
+detect:
+    filename: "(\\.py$)"
+
+rules:
+    - identifier.python.function.var: "\\b([a-zA-Z_][a-zA-Z_0-9]*)\\s*="  # Variable assignments in function scope
+    - identifier.python.class.attribute2: "\\b\\.([a-z][a-zA-Z_0-9]*)\\b"  # Identifies attributes (self. attribute)
+
+    - identifier.python.class.attribute: "\\b(\\w+)\\.(\\w+)\\b"  # Identifies attributes (self. attribute)
+    - identifier.python.function: "\\b([a-z_][a-zA-Z_0-9]*)\\("  # Matches standalone functions like print()
+    - identifier.python.class: "\\b\\s+2([a-z][a-zA-Z_0-9]*)\\."  # Highlight "self" keyword in methods 
+    - identifier.python.class.method: "\\bdef\\s+([a-zA-Z_][a-zA-Z_0-9]*)\\s*\\(self"  # Matches method names inside a class      
+    - identifier.python.class: "\\bclass\\s+([a-zA-Z_][a-zA-Z_0-9]*)\\b"  # Matches class definitions 
+    - identifier.python.class: "\\b([A-Z][a-zA-Z_0-9]*)\\s*\\("  # Matches class definitions with inheritance 
+    - identifier.python.self: "\\b(self)\\b"  # Highlight "self" keyword in methods   
+    - identifier.python.import: "\\b(import|from)\\s+([a-zA-Z_][a-zA-Z_0-9]*)"  # Import statements like import os
+    - identifier.python.as: "\\b(as)\\s+([a-zA-Z_][a-zA-Z_0-9]*)"  # Import statements  
+    - identifier: "\\b[a-z_][0-9A-Z_]+\\b"  # Matches global constants or class names with upper case
+    
+    - type: "\\b(object|class|int|float|str|bool|complex|None|list|dict|tuple|set|frozenset|bytes|bytearray)\\b"  # Python types
+    - statement: "\\b(def|return|yield|raise|import|from|try|except|finally|with|as|global|nonlocal)\\b"  # Python control flow keywords
+    - statement: "\\b(if|elif|else|for|while|break|continue|pass)\\b"  # Control structures like if/else/for
+    - statement: "\\b(is|in|not|and|or|assert)\\b"  # Logical and comparison operators
+    - preproc: "^[[:space:]]*#\\s*(import|from|define|ifdef|endif|pragma|error|warn)"  # Preprocessor-like directives (e.g., imports)
+    - symbol.operator: "[-+*/%=<>.:;,~&|^!?]"  # Operators like +, -, *, etc.
+    - symbol.brackets: "[(){}\\[\\]]"  # Brackets used in Python (parentheses, curly braces, and square brackets)
+    - constant.number: "(\\b([1-9][0-9]*|0[0-7]*|0[Xx][0-9A-Fa-f]+|0[Bb][01]+)\\b)"  # Numeric constants (int)
+    - constant.number: "(\\b(([0-9]*[.][0-9]+|[0-9]+[.][0-9]*)([Ee][+-]?[0-9]+)?|[0-9]+[Ee][+-]?[0-9]+)[FfLl]?\\b)"  # Float constants
+    - constant.bool: "(\\b(True|False)\\b)"  # Boolean constants
+
+    - constant.string:
+        start: "\""
+        end: "\""
+        skip: "\\\\."
+        rules:
+            - constant.specialChar: "\\\\([\"'abfnrtv\\\\]|[0-3]?[0-7]{1,2}|x[0-9A-Fa-f]{1,2}|u[0-9A-Fa-f]{4}|U[0-9A-Fa-f]{8})"
+
+    - constant.string:
+        start: "'"
+        end: "'"
+        skip: "\\\\."
+        rules:
+            - constant.specialChar: "\\\\([\"'abfnrtv\\\\]|[0-3]?[0-7]{1,2}|x[0-9A-Fa-f]{1,2}|u[0-9A-Fa-f]{4}|U[0-9A-Fa-f]{8})"
+
+    - comment:
+        start: "#"
+        end: "$"
+        rules:
+            - todo: "(TODO|XXX|FIXME):?"  # Matches comments with TODO, XXX, FIXME tags
+
+    - comment:
+        start: "\"\"\""
+        end: "\"\"\""
+        rules:
+            - todo: "(TODO|XXX|FIXME):?"  # Multiline comments (docstrings)

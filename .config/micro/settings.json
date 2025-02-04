@@ -1,0 +1,15 @@
+{
+    "autosave": 300,
+    "colorscheme": "dev",
+    "cursorcolumn": true,
+    "diffgutter": true,
+    "matchbracestyle": "highlight",
+    "matchcrace": true,
+    "pageoverlap": 5,
+    "reload": "auto",
+    "scrollbar": true,
+    "scrolljump": 5,
+    "scrollmargin": 5,
+    "statusformatl": "$(filename)[$(line):$(col)][$(status.branch)]",
+    "statusformatr": "$(bind:ToggleKeyMenu): keymap, $(bind:SearchFile): search"
+}
