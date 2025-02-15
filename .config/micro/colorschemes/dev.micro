@@ -19,7 +19,7 @@ color-link todo "#D70000,#D70000" #                       # #D70000, #89cff0
 color-link hlsearch "#D70000,#D70000" #                   # #D70000, #B58900     
 color-link statusline "#D70000,#D70000" #                 # #D70000, #268BD2     
 color-link tabbar "#D70000,#D70000" #                     # #D70000, #839496     
-color-link indent-char "#D70000,#D70000" #                # #D70000, #c599ff   
+color-link indent-char "#D70000,#D70000" #                # #D70000, #D70000   
 color-link cursor-line "#D70000" #                        # #D70000     
 color-link color-column "#D70000" #                       # #D70000     
 color-link type.extended "#D70000,#D70000" #              # #D70000, #08b110     
@@ -31,21 +31,23 @@ color-link symbol.tag "#D70000,#D70000" #                 # #D70000, #D33682
 #####
 # C #
 #####
-color-link identifier.c.function "#fdee00,#002833" #                      # #fdee00, #002833  
-color-link identifier.c.pointer "#08b110,#002833" #                       # #08b110, #002833 
+#color-link identifier.c.pointer_d "#6eeeff,#002833" #                     # #6eeeff, #002833  
 color-link identifier.c.struct "#08b110,#002833" #                        # #08b110, #002833 
-color-link identifier.c.pointer_d "#6eeeff,#002833" #                     # #6eeeff, #002833  
+color-link identifier.c.typedef "#08b110,#002833" #                      # #08b110, #002833  # Test #
+color-link identifier.c.union "#08b110,#002833" #                        # #08b110, #002833  # Test #
+color-link identifier.c.enum "#08b110,#002833" #                         # #08b110, #002833  # Test #
+color-link identifier.c.struct.func "#00c1ff,#002833" #                  # #00c1ff, #002833
+color-link identifier.c.variable "#D70000,#002833" #                     # #D70000, #002833
+color-link identifier.c.struct_member "#a0e1ff,#002833" #                # #a0e1ff, #002833
+color-link identifier.c.enum_member "#a0e1ff,#002833" #                  # #a0e1ff, #002833
+color-link identifier.c.function "#fdee00,#002833" #                      # #fdee00, #002833  
+color-link constant.number "#aaeeff,#002833" #                           # #aaeeff, #002833
+#color-link identifier.c.def "#D70000,#002833"  #                         # #D70000, #002833  # Test #
+color-link identifier.c.pointer "#00c1ff,#002833" #                       # #00c1ff, #002833 
 color-link identifier.c.reference "#00c1ff,#002833" #                     # #00c1ff, #002833
-#######################################################
-#color-link identifier.c "#D70000,#002833" #                             # #D70000, #002833 off
-#color-link identifier.c.parameter "#00c1ff,#002833" #                   # #00c1ff, #002833 off
-#color-link identifier.c.function "#fdee00,#002833" #                    # #fdee00, #002833
-#color-link identifier.c.function.argument "#dadada,#002833" #             # #dadada, #002833
-#color-link identifier.c.function.var "#00a1ff,#002833" #                # #00a1ff, #002833
-#color-link identifier.c.struct "#009b0d,#002833" #                      # #009b0d, #002833
-#color-link identifier.c.struct.pointer "#009b0d,#002833" #              # #009b0d, #002833
-#color-link identifier.c.struct.reference "#00c1ff,#002833" #            # #00c1ff, #002833
-#color-link identifier.c.enum "#009b0d,#002833" #                        # #009b0d, #002833
+color-link identifier.c.d_var "#D70000,#002833" #                        # #D70000, #002833  # Test #
+
+
 
 ##########
 # Python #
@@ -56,10 +58,23 @@ color-link identifier.python.self "#0081ff,#002833" #                     # #008
 color-link identifier.python.class.method "#fdee00,#002833" #             # #fdee00, #002833
 color-link identifier.python.class.attribute "#00a1ff,#002833" #          # #00a1ff, #002833
 color-link identifier.python.as "#00a1ff,#002833" #                       # #00a1ff, #002833
-color-link identifier.python.class.attribute2 "#00e1ff,#002833" #         # #00c1ff, #002833
+color-link identifier.python.class.attribute2 "#00c1ff,#002833" #         # #00c1ff, #002833
 color-link identifier.python.function "#fdee00,#002833" #                 # #fdee00, #002833
 color-link identifier.python.function.var "#dadada,#002833" #             # #dadada, #002833
 color-link identifier.python.string "#ffc863,#002833" #                   # #ffc863, #002833
+
+
+##########
+# Cython #
+########## 
+color-link identifier.cython.pointer "#00c1ff,#002833" #                  # #00c1ff, #002833  
+color-link identifier.cython.reference "#00c1ff,#002833" #                # #00c1ff, #002833  
+color-link identifier.cython.function "#fdee00,#002833" #                 # #fdee00, #002833  
+#color-link statement.cython "#D70000,#002833" #                           # #D70000, #002833  
+
+
+
+
 
 #########################
 # Solarized-tc Defaults #
@@ -100,8 +115,8 @@ color-link line-number "#f8f8ff,#002833" #                # #f8f8ff, #002833
 color-link type "#007ecc,#002833" #                       # #007ecc, #002833     
 color-link preproc "#f1c17f,#002833" #                    # #f1c17f, #002833          
 color-link special "#c599ff,#002833" #                    # #c599ff, #002833     
-color-link statement "#a64ca6,#002833" #                  # #a64ca6, #002833 
-color-link symbol "#96d9e0,#002833" #                     # #96d9e0, #002833  
+color-link statement "#aa00aa,#002833" #                  # #aa00aa, #002833 
+color-link symbol "#ddffff,#002833" #                     # #ddffff, #002833  
 color-link symbol.brackets "#f3e033,#002833" #            # #f3e033, #002833 
 color-link constant "#6f8099,#002833" #                   # #6f8099, #002833    
 color-link constant.string  "#f1c17f,#002833" #           # #f1c17f, #002833     

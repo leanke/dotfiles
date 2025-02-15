@@ -4,7 +4,6 @@
     "cursorcolumn": true,
     "diffgutter": true,
     "matchbracestyle": "highlight",
-    "matchcrace": true,
     "pageoverlap": 5,
     "reload": "auto",
     "scrollbar": true,

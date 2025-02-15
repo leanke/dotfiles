@@ -83,7 +83,7 @@ if ! shopt -oq posix; then
 fi
 
 #GitHub bash prompt
-source /home/leanke/loft/config/git-prompt.sh
+source ~/loft/dotfiles/scripts/git-prompt.sh
 
 #Added by Leanke
 export EDITOR=micro
@@ -92,3 +92,4 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
 
+cd /home/leanke/loft
